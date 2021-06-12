@@ -1,0 +1,1063 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{73962C5D-0A2D-4F52-A025-FF6F01C7973D}" Name="Account Data Profiling">
+      <DtsConnectionManagerID>Account Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{18894F8F-9DDD-4F3F-BFF1-9516CAD80AAC}" Name="Account Transaction Data Profiling">
+      <DtsConnectionManagerID>Account Transaction Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{48804924-2D21-4DA4-926D-56D1BBE535A7}" Name="Card Data Profiling">
+      <DtsConnectionManagerID>Card Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{ADBEA99A-8DA9-4188-AAE1-AA370DE444BB}" Name="Client Address Data Profiling">
+      <DtsConnectionManagerID>Client Address Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{FEAC3BDC-900F-46F2-8EF5-D92EB899BEA6}" Name="Client Data Profiling">
+      <DtsConnectionManagerID>Client Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{934A6929-2A3B-4C0F-BE98-49C0C6063A52}" Name="Client_Data_Profiling">
+      <DtsConnectionManagerID>Client_Data_Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{73D7EC79-0A7C-4CB7-A1CB-DEA71C6FD651}" Name="Disposition Data Profiling">
+      <DtsConnectionManagerID>Disposition Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{1A8DD330-9F46-4139-A6A6-F738EF5D2878}" Name="District Data Profiling">
+      <DtsConnectionManagerID>District Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{F811D558-4E97-48AE-B285-D8DFEE9504F2}" Name="Loan Data Profiling">
+      <DtsConnectionManagerID>Loan Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{10CD11E7-51C0-4EB0-BFD3-B543D0255234}" Name="Mariyam.PedictLoanDefaulters_Staging">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{C271EB51-F427-450C-ADC9-75CC55A43949}" Name="Mariyam.PedictLoanDefaulters_Staging 1">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 1</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{B9F6A9E9-4EC7-46F8-BB6B-54E077936F9A}" Name="Mariyam.PedictLoanDefaulters_Staging 2">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 2</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{90AD5E98-DB1D-47D8-95BA-D2F0954E32D7}" Name="Mariyam.PedictLoanDefaulters_Staging 3">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 3</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{7A79CBB0-499E-47B8-8261-7B1271F6E435}" Name="Mariyam.PedictLoanDefaulters_Staging 4">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 4</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{A4C500F3-D6F8-4D00-8277-F2AAA5894184}" Name="Mariyam.PedictLoanDefaulters_Staging 5">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 5</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{3D8281AE-61FD-46F4-9571-0F698380A0AF}" Name="Mariyam.PedictLoanDefaulters_Staging 6">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 6</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{9F0A7020-403F-418B-B4F1-AE0AC0D056E0}" Name="Mariyam.PedictLoanDefaulters_Staging 7">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 7</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{AE3474C6-1FDB-4970-9FE0-5D9074301530}" Name="Mariyam.PedictLoanDefaulters_Staging 8">
+      <DtsConnectionManagerID>Mariyam.PedictLoanDefaulters_Staging 8</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{3996040A-9E9F-4513-9875-1FC3946216A0}" Name="Standing Order Data Profiling">
+      <DtsConnectionManagerID>Standing Order Data Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{9AF050E0-C2AA-445A-8B58-647D87FDA972}" Name="Standing Order Profiling">
+      <DtsConnectionManagerID>Standing Order Profiling</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table Schema="dbo" Table="stgStandingOrder" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="accountID" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="bank_to" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="amount" SqlDbType="Decimal" MaxLength="0" Precision="38" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="k_symbol" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>29401</MinValue>
+        <MaxValue>46338</MaxValue>
+        <Mean>33778.1974965229</Mean>
+        <StdDev>3737.39313490649</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>399</MinValue>
+        <MaxValue>99994199</MaxValue>
+        <Mean>49399036.8511822</Mean>
+        <StdDev>28881327.2579414</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="amount" SqlDbType="Decimal" MaxLength="0" Precision="38" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>14882</MaxValue>
+        <Mean>3280.5966620306</Mean>
+        <StdDev>2714.25524813819</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="accountID" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>9</MinLength>
+        <MaxLength>9</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>6471</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="bank_to" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>2</MinLength>
+        <MaxLength>2</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>2</Length>
+            <Count>6471</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="k_symbol" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>0</MinLength>
+        <MaxLength>9</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>0</Length>
+            <Count>1379</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>4034</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>341</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>717</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <KeyColumns>
+          <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>6471</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="accountID" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>3758</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="bank_to" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>13</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>UV</Value>
+            <Count>499</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>KL</Value>
+            <Count>500</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>IJ</Value>
+            <Count>496</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>QR</Value>
+            <Count>531</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>GH</Value>
+            <Count>487</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>YZ</Value>
+            <Count>521</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MN</Value>
+            <Count>466</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>ST</Value>
+            <Count>511</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>EF</Value>
+            <Count>483</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>CD</Value>
+            <Count>458</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>OP</Value>
+            <Count>485</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>WX</Value>
+            <Count>515</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>AB</Value>
+            <Count>519</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <KeyColumns>
+          <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>false</IsExactKey>
+        <KeyStrength>0.9961366</KeyStrength>
+        <KeyViolations>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>1301700</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>52864879</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>95437645</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>97387158</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>79838293</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>83435654</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>4896235</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>13943797</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>1838881</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>64685678</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>30643040</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>86397230</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>29934013</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>67186093</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>89597016</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>28156739</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>10807258</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>2692229</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>69415771</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>99149345</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>45261365</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>96968262</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>79067885</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>14132368</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>5287313</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+        </KeyViolations>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>6446</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="k_symbol" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Insurance</Value>
+            <Count>532</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Loan</Value>
+            <Count>717</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value> </Value>
+            <Count>1379</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Household</Value>
+            <Count>3502</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Leasing</Value>
+            <Count>341</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="accountID" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>A000\d+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="bank_to" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}\p{L}</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <Column Name="k_symbol" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>HOUSEHOLD</RegexText>
+            <Frequency>69</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>INSURANCE</RegexText>
+            <Frequency>11</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>LOAN</RegexText>
+            <Frequency>14</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>LEASING</RegexText>
+            <Frequency>7</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="k_symbol" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="bank_to" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="accountID" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="k_symbol" SqlDbType="VarChar" MaxLength="100" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>false</IsExactFD>
+        <FDStrength>0.9998454</FDStrength>
+        <FDViolations>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>95437645</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>Household</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+        </FDViolations>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="bank_to" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="accountID" SqlDbType="VarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>false</IsExactFD>
+        <FDStrength>0.9961366</FDStrength>
+        <FDViolations>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>1301700</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00007424</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>1838881</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00009424</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>2692229</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000038</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>4896235</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000025</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>5287313</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00010812</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>10807258</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002580</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>13943797</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000002</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>14132368</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000019</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>28156739</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002062</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>29934013</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00010807</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>30643040</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002062</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>45261365</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00010049</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>52864879</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000025</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>64685678</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000038</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>67186093</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002073</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>69415771</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002227</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>79067885</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000038</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>79838293</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000025</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>83435654</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000038</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>86397230</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00009583</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>89597016</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00000002</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>95437645</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002694</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>96968262</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002580</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>97387158</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00002062</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>99149345</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>A00007606</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+        </FDViolations>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{3D8281AE-61FD-46F4-9571-0F698380A0AF}</DataSourceID>
+        <Table DataSource="Mariyam" Database="PedictLoanDefaulters_Staging" Schema="dbo" Table="stgStandingOrder" RowCount="6471" />
+        <DeterminantColumns>
+          <Column Name="account_to" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="standingOrderID" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>false</IsExactFD>
+        <FDStrength>0.9961366</FDStrength>
+        <FDViolations>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>1301700</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40357</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>1838881</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>43361</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>2692229</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40382</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>4896235</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>29432</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>5287313</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>45460</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>10807258</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>33217</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>13943797</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40329</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>14132368</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>29423</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>28156739</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>32429</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>29934013</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>34507</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>30643040</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>43358</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>45261365</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>44299</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>52864879</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>29434</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>64685678</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>29458</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>67186093</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>32445</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>69415771</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>43601</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>79067885</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40381</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>79838293</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40359</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>83435654</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40383</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>86397230</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>32669</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>89597016</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>40328</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>95437645</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>44298</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>96968262</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>44112</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>97387158</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>32427</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>99149345</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>29712</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+        </FDViolations>
+      </FunctionalDependencyProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>
