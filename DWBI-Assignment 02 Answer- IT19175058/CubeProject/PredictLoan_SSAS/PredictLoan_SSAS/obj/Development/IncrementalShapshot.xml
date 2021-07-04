@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>PredictLoan_SSAS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>9x+P7TTci3Lp7T+XJ2xCwzXOuU4=6/21/2021 6:29:11 PM6/21/2021 6:29:11 PM</TimeStamp>
+        <ID>
+          <String>PredictLoan_Defaulters_DS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Ieeqigtwdi8Ven8/4lrB/QUQ3XU=6/21/2021 6:41:15 PM6/21/2021 6:30:16 PM</TimeStamp>
+        <ID>
+          <String>Pedict_Loan_Defaulters_DSV</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0WCcclOYdLdbZ3Ue7rQYQV5Ibwg=6/21/2021 6:44:17 PM6/21/2021 6:41:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>t2OyOptTXuqFxGQcl2BkJPdsFBU=6/21/2021 6:49:02 PM6/21/2021 6:41:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RFgg+bpOj3ri9XlNTnayPHPCiUU=6/21/2021 6:49:26 PM6/21/2021 6:41:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Loan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IbpQf8uaRNg/3d7vE+Sz2GgeHWQ=6/21/2021 6:51:12 PM6/21/2021 6:41:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Client</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9Rdsblhy6R0QcopMbPOJkl/eNCw=6/21/2021 6:51:33 PM6/21/2021 6:41:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Standing Order</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UCeYIJTs5akGwheGu7x0oBhC5Nw=6/21/2021 6:51:47 PM6/21/2021 6:41:15 PM</TimeStamp>
+        <ID>
+          <String>Dim Disposition</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>94QAwSII+1SdV5PB96gZy+eYqAk=6/21/2021 6:59:55 PM6/21/2021 6:41:14 PM2hXg3I53ROFlRYZxg6bp6xxbfZU=6/21/2021 6:41:15 PM6/21/2021 6:41:14 PM</TimeStamp>
+        <ID>
+          <String>Pedict_Loan_Defaulters_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>z2A3oY5uk1bO2XVu/vN8QTgFaRk=6/21/2021 6:23:40 PM6/21/2021 6:23:40 PM</TimeStamp>
+      <ID>
+        <String>PredictLoan_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-06-21T13:30:26.673333Z</LastDeployed>
+</DeploymentSnapshot>
